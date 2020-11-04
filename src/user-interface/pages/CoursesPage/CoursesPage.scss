@@ -1,0 +1,52 @@
+// TODO: Put those global styles related to BootStrap in a global shared file.
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row.grid-gutter-y-normal {
+  margin-top: -12px;
+  margin-bottom: -12px;
+}
+
+.row.grid-gutter-x-half {
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.row.grid-gutter-y-normal > [class^=col] {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.row.grid-gutter-x-half > [class^=col] {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+@media (min-width: 768px) {
+  .row.grid-gutter-x-md-normal {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+
+  .row.grid-gutter-x-md-normal > [class^=col] {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .col-xl-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .col-lg-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+}
